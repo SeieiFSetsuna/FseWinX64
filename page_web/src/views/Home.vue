@@ -3,8 +3,8 @@
     <div class="body">
       <div class="header">
         <div class="overlay">
-          <h1>File Share</h1>
-          <h3>跨平台、高速的文件传输工具</h3>
+          <h1>自己拿，不用谢</h1>
+          <h3>在下方搜索栏输入产品名称便可查看</h3>
         </div>
       </div>
 
@@ -19,7 +19,7 @@
                   {{ isPC ? "批量下载" : "" }}
                 </el-button>
               </el-col>
-              <el-col :span="6">
+              <!-- <el-col :span="6">
                 <el-button @click="fileFormVisible= true">
                   <svg-icon name="发送文件"/>
                   {{ isPC ? "上传文件" : "" }}
@@ -30,7 +30,7 @@
                   <svg-icon name="发送消息"/>
                   {{ isPC ? "上传文本" : "" }}
                 </el-button>
-              </el-col>
+              </el-col> -->
             </el-row>
           </div>
         </template>
