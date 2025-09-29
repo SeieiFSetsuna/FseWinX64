@@ -13,7 +13,7 @@
           <div class="clearfix">
             <el-row class="row-bg">
               <el-col :span="12">
-                <span style="margin-right: 20px">分享列表</span>
+                <span style="margin-right: 20px">自己拿列表</span>
                 <el-button v-if="batchDownload" @click="batchDownloadHandler">
                   <svg-icon name="批量下载"/>
                   {{ isPC ? "批量下载" : "" }}
@@ -26,7 +26,7 @@
                 </el-button>
               </el-col>
               <el-col :span="6">
-                <el-button @click="showMsgForm" type="default" title="分享一段文本">
+                <el-button @click="showMsgForm" type="default" title="自己拿一段文本">
                   <svg-icon name="发送消息"/>
                   {{ isPC ? "上传文本" : "" }}
                 </el-button>
@@ -101,7 +101,7 @@
                     <div class="filename">{{ scope.row.name }}</div>
                   </el-tooltip>
                   <el-tooltip v-if="!!scope.row.username" effect="light"
-                              :content="`由【${scope.row.username}】分享`"
+                              :content="`由【${scope.row.username}】拿给你的`"
                               placement="top">
                     <el-icon class="username" size="16">
                       <User/>
@@ -130,7 +130,7 @@
         </div>
       </el-card>
       <el-dialog
-        title="分享文件"
+        title="自己拿文件"
         name="file"
         class="dialog"
         v-model="fileFormVisible">
@@ -152,7 +152,7 @@
         </div>
       </el-dialog>
       <el-dialog
-        title="分享文本"
+        title="自己拿文本"
         class="dialog"
         v-model="msgFormVisible">
         <el-form ref="form" :model="msgForm" label-width="80px">
@@ -204,7 +204,7 @@ export default {
   },
   data() {
     return {
-      title: 'File Share',
+      title: '自己拿，不用谢',
       selectedFileNames: new Set(),
       batchDownload: false,
       // 文件表单
