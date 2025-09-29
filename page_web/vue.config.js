@@ -2,7 +2,8 @@ const {defineConfig} = require('@vue/cli-service')
 const path = require('path');
 const resolve = dir => path.join(__dirname, dir);
 const name = "fileshare 文件共享"; // 网页标题
-const port = process.env.port || process.env.npm_config_port || 8001; // 端口
+// const port = process.env.port || process.env.npm_config_port || 8001; // 端口
+const port = process.env.port || process.env.npm_config_port || 80; // 端口
 module.exports = defineConfig({
   publicPath: './',
   outputDir: "dist",
