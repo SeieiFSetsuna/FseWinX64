@@ -11,14 +11,14 @@
         <el-row class="row-bg">
           <el-col :span="24">
             <el-form ref="form" :model="settingForm" label-width="80px">
-              <el-form-item label="服务自启">
+              <el-form-item label="自己拿自启">
                 <el-switch v-model="settingForm.autoStart">
                 </el-switch>
               </el-form-item>
               <el-form-item label="上传路径">
                 <el-input v-model="settingForm.uploadPath"></el-input>
               </el-form-item>
-              <el-form-item label="服务端口">
+              <el-form-item label="自己拿端口">
                 <el-input v-model="settingForm.port"></el-input>
               </el-form-item>
               <el-form-item label="密码认证">
@@ -46,15 +46,15 @@
             <template #header>
               <div class="card-header">
                 <el-row class="row-bg" justify="space-between">
-                  <el-col :span="6">正在分享...</el-col>
+                  <el-col :span="6">正在自己拿...</el-col>
                   <el-col :span="6">
-                    <el-button type="danger" @click="stopServer" plain>取消分享</el-button>
+                    <el-button type="danger" @click="stopServer" plain>取消自己拿</el-button>
                   </el-col>
                 </el-row>
               </div>
             </template>
             <el-row class="row-bg">
-              <el-col :span="12">分享链接：{{ settingForm.url }}</el-col>
+              <el-col :span="12">自己拿链接：{{ settingForm.url }}</el-col>
               <el-col :span="3">
                 <el-popover placement="left" :width="125" trigger="hover">
                   <template #reference>
@@ -103,7 +103,7 @@
 
           <el-card class="box-card">
             <template #header>
-              <el-dialog v-model="dialogFormVisible" title="分享一段文本">
+              <el-dialog v-model="dialogFormVisible" title="自己拿一段文本">
                 <el-input type="textarea" :rows="2" :autosize="{ minRows: 2, maxRows: 4 }"
                           placeholder="请输入内容" v-model="form.text">
                 </el-input>
@@ -114,13 +114,13 @@
 
               <div class="card-header">
                 <el-row class="row-bg">
-                  <el-col :span="12">分享列表</el-col>
+                  <el-col :span="12">自己拿列表</el-col>
                   <el-col :span="4">
-                    <el-button @click="dialogFormVisible = true" type="default" title="分享一段文本">
+                    <el-button @click="dialogFormVisible = true" type="default" title="自己拿一段文本">
                       <el-icon>
                         <Message/>
                       </el-icon>
-                      分享文本
+                      自己拿文本
                     </el-button>
                   </el-col>
                   <el-col :span="4">
@@ -145,7 +145,7 @@
                          :http-request="addFiles">
                 <i class="el-icon-upload"></i>
                 <div class="el-upload__text">
-                  拖拽<b>文件</b>或<b>文件夹</b>到此处或点击<em>选择文件</em>，进行分享~
+                  拖拽<b>文件</b>或<b>文件夹</b>到此处或点击<em>选择文件</em>，进行自己拿~
                 </div>
               </el-upload>
             </div>
@@ -154,7 +154,7 @@
               <el-row class="row-bg" justify="space-between">
                 <el-col :span="5">
                   <el-tooltip effect="light" placement="top">
-                    <template #content>{{ `由【${file.username}】分享` }}</template>
+                    <template #content>{{ `由【${file.username}】拿给你的` }}</template>
                     <span class="username">{{ file.username }}</span>
                   </el-tooltip>
                 </el-col>
@@ -199,7 +199,7 @@
       </div>
       <div :style="serverStatus === 'start' ? 'display:none' : ''">
         <div class="btn-box">
-          <div class="start-btn" @click="startServer">开启服务</div>
+          <div class="start-btn" @click="startServer">开启自己拿</div>
           <div class="start-btn-shadow">
             <span style="--i:1"></span>
             <span style="--i:2"></span>
@@ -390,11 +390,11 @@ export default {
     // 注册事件监听
     console.log(api)
     api.registryEventListener('server.statusChange', (event) => {
-      console.log("---服务状态变更---", event)
+      console.log("---自己拿状态变更---", event)
       this.serverStatus = event.data.status
     })
     api.registryEventListener('fileDb.listChange', (event) => {
-      console.log("---文件列表变更---", event)
+      console.log("---自己拿列表变更---", event)
       this.files = api.listFiles();
       console.log(this.files)
     })
