@@ -15,9 +15,9 @@
                 <el-switch v-model="settingForm.autoStart">
                 </el-switch>
               </el-form-item>
-              <el-form-item label="贡献之路径">
+              <!-- <el-form-item label="贡献之路径">
                 <el-input v-model="settingForm.uploadPath"></el-input>
-              </el-form-item>
+              </el-form-item> -->
               <el-form-item label="自己拿入口">
                 <el-input v-model="settingForm.port"></el-input>
               </el-form-item>
