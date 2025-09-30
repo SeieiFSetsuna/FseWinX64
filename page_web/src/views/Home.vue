@@ -468,11 +468,11 @@ export default {
 }
 
 .header .overlay {
-  width: 100%;
+  color: #fff;
+  width: 95vw;
+  height: 15vh;
   margin: 0 auto;
-  height: 100%;
-  padding: 8px;
-  color: #FFF;
+  padding-top: 2.5vh;
 }
 
 .file-desc {
@@ -503,16 +503,18 @@ export default {
 
 h1 {
   font-family: 'DancingScript', cursive;
-  font-size: 60px;
-  margin-bottom: 15px;
-  margin-top: 8px;
+  font-size: 5vh;
+  // font-size: 60px;
+  // margin-bottom: 15px;
+  // margin-bottom: 15px;
+  // margin-top: 8px;
 }
 
 h3 {
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 30px;
   display: block;
-  font-size: 1em;
+  font-size: 1.5vh;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0;
