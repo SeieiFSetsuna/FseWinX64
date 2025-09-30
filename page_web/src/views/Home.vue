@@ -502,6 +502,7 @@ export default {
 }
 
 h1 {
+  height: 10vh;
   font-family: 'DancingScript', cursive;
   font-size: 5vh;
   // font-size: 60px;
@@ -512,7 +513,7 @@ h1 {
 
 h3 {
   display: block;
-  height: 3vh;
+  height: 5vh;
   // margin-block-start: 1.5vh;
   // margin-block-end: 1.5vh;
   // margin-inline-start: 0;
