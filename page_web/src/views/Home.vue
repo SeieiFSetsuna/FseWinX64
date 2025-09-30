@@ -505,6 +505,7 @@ h1 {
   height: 10vh;
   font-family: 'DancingScript', cursive;
   font-size: 5vh;
+  line-height: 10vh;
   // font-size: 60px;
   // margin-bottom: 15px;
   // margin-bottom: 15px;
@@ -522,6 +523,7 @@ h3 {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5vh;
   font-weight: bold;
+  line-height: 5vh;
 }
 
 .row-bg {
