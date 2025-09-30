@@ -21,7 +21,7 @@
               <el-form-item label="自己拿端口">
                 <el-input v-model="settingForm.port"></el-input>
               </el-form-item>
-              <el-form-item label="密码之认证">
+              <el-form-item label="密码要认证">
                 <el-switch v-model="settingForm.authEnable">
                 </el-switch>
               </el-form-item>
