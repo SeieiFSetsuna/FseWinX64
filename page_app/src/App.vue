@@ -10,25 +10,25 @@
       <el-dialog v-model="settingFormVisible" title="设置" style="width: 70%;">
         <el-row class="row-bg">
           <el-col :span="24">
-            <el-form ref="form" :model="settingForm" label-width="80px">
+            <el-form ref="form" :model="settingForm" label-width="100px">
               <el-form-item label="自己拿自启">
                 <el-switch v-model="settingForm.autoStart">
                 </el-switch>
               </el-form-item>
-              <el-form-item label="上传路径">
+              <el-form-item label="贡献之路径">
                 <el-input v-model="settingForm.uploadPath"></el-input>
               </el-form-item>
               <el-form-item label="自己拿端口">
                 <el-input v-model="settingForm.port"></el-input>
               </el-form-item>
-              <el-form-item label="密码认证">
+              <el-form-item label="密码之认证">
                 <el-switch v-model="settingForm.authEnable">
                 </el-switch>
               </el-form-item>
-              <el-form-item v-if="settingForm.authEnable" label="校验密码">
+              <el-form-item v-if="settingForm.authEnable" label="校对验密码">
                 <el-input v-model="settingForm.password" show-password></el-input>
               </el-form-item>
-              <el-form-item label="调试工具">
+              <el-form-item label="调试有工具">
                 <el-switch v-model="devTool" @change="switchDevTool">
                 </el-switch>
               </el-form-item>
