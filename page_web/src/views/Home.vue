@@ -151,7 +151,7 @@
           </el-upload>
         </div>
       </el-dialog>
-      <el-dialog
+      <!-- <el-dialog
         title="自己拿文本"
         class="dialog"
         v-model="msgFormVisible">
@@ -166,7 +166,7 @@
           <el-button @click="msgFormVisible = false">取 消</el-button>
         </span>
         </template>
-      </el-dialog>
+      </el-dialog> -->
       <el-dialog
         title="身份校验"
         class="dialog"
