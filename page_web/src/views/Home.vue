@@ -511,14 +511,15 @@ h1 {
 }
 
 h3 {
-  font-family: 'Open Sans', sans-serif;
-  margin-bottom: 30px;
   display: block;
+  height: 3vh;
+  // margin-block-start: 1.5vh;
+  // margin-block-end: 1.5vh;
+  // margin-inline-start: 0;
+  // margin-inline-end: 0;
+  // margin-bottom: 30px;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.5vh;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
   font-weight: bold;
 }
 
