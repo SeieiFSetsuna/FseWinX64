@@ -28,10 +28,10 @@
               <el-form-item v-if="settingForm.authEnable" label="校对验密码">
                 <el-input v-model="settingForm.password" show-password></el-input>
               </el-form-item>
-              <el-form-item label="调试有工具">
+              <!-- <el-form-item label="调试有工具">
                 <el-switch v-model="devTool" @change="switchDevTool">
                 </el-switch>
-              </el-form-item>
+              </el-form-item> -->
             </el-form>
           </el-col>
         </el-row>
