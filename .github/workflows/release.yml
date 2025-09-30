@@ -128,15 +128,15 @@ jobs:
         if: runner.os == 'Linux'
         with:
           files: |
-            electron/build/takeitemyouself-linux-amd64.deb
+            electron/build/fileshare-linux-amd64.deb
 
       - name: Release mac
         uses: softprops/action-gh-release@v2
         if: runner.os == 'macOS'
         with:
           files: |
-            electron/build/takeitemyouself-mac-arm64.dmg
-            electron/build/takeitemyouself-mac-x64.dmg
+            electron/build/fileshare-mac-arm64.dmg
+            electron/build/fileshare-mac-x64.dmg
 
   windows:
     runs-on: windows-latest
@@ -235,5 +235,5 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            electron/build/takeitemyouself-setup-win-ia32.exe
-            electron/build/takeitemyouself-setup-win-x64.exe
+            electron/build/fileshare-setup-win-ia32.exe
+            electron/build/fileshare-setup-win-x64.exe
