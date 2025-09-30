@@ -18,7 +18,7 @@
               <el-form-item label="贡献之路径">
                 <el-input v-model="settingForm.uploadPath"></el-input>
               </el-form-item>
-              <el-form-item label="自己拿端口">
+              <el-form-item label="自己拿入口">
                 <el-input v-model="settingForm.port"></el-input>
               </el-form-item>
               <el-form-item label="密码要认证">
@@ -115,14 +115,14 @@
               <div class="card-header">
                 <el-row class="row-bg">
                   <el-col :span="12">自己拿列表</el-col>
-                  <el-col :span="4">
+                  <!-- <el-col :span="4">
                     <el-button @click="dialogFormVisible = true" type="default" title="自己拿一段文本">
                       <el-icon>
                         <Message/>
                       </el-icon>
                       自己拿文本
                     </el-button>
-                  </el-col>
+                  </el-col> -->
                   <el-col :span="4">
                     <el-popconfirm @confirm="removeFileAll()" title="确定要清空所有文件吗？">
                       <template #reference>
