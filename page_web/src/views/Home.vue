@@ -594,4 +594,10 @@ h3 {
   }
 }
 
+/** # */
+.el-scrollbar__wrap {
+  height: calc(80vh - 200px);
+  overflow: auto;
+}
+
 </style>
