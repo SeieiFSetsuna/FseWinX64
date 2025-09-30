@@ -456,12 +456,15 @@ export default {
 
 .body {
   max-width: 750px;
+  width: 100vw;
+  height: 100vh;
   margin: 0 auto;
 }
 
 .header {
+  height: 20vh;
   text-align: center;
-  margin-bottom: 16px;
+  // margin-bottom: 16px;
 }
 
 .header .overlay {
