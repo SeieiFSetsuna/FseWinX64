@@ -15,9 +15,9 @@
                 <el-switch v-model="settingForm.autoStart">
                 </el-switch>
               </el-form-item>
-              <!-- <el-form-item label="贡献之路径">
+              <el-form-item label="贡献之路径">
                 <el-input v-model="settingForm.uploadPath"></el-input>
-              </el-form-item> -->
+              </el-form-item>
               <el-form-item label="自己拿入口">
                 <el-input v-model="settingForm.port"></el-input>
               </el-form-item>
@@ -103,26 +103,26 @@
 
           <el-card class="box-card">
             <template #header>
-              <!-- <el-dialog v-model="dialogFormVisible" title="自己拿一段文本">
+              <el-dialog v-model="dialogFormVisible" title="自己拿一段文本">
                 <el-input type="textarea" :rows="2" :autosize="{ minRows: 2, maxRows: 4 }"
                           placeholder="请输入内容" v-model="form.text">
                 </el-input>
                 <template #footer>
                   <el-button type="primary" @click="formSubmit">提交</el-button>
                 </template>
-              </el-dialog> -->
+              </el-dialog>
 
               <div class="card-header">
                 <el-row class="row-bg">
                   <el-col :span="12">自己拿列表</el-col>
-                  <!-- <el-col :span="4">
+                  <el-col :span="4">
                     <el-button @click="dialogFormVisible = true" type="default" title="自己拿一段文本">
                       <el-icon>
                         <Message/>
                       </el-icon>
                       自己拿文本
                     </el-button>
-                  </el-col> -->
+                  </el-col>
                   <el-col :span="4">
                     <el-popconfirm @confirm="removeFileAll()" title="确定要清空所有文件吗？">
                       <template #reference>
