@@ -455,7 +455,7 @@ export default {
 }
 
 .body {
-  max-width: 750px;
+  // max-width: 750px;
   width: 100vw;
   height: 100vh;
   margin: 0 auto;
@@ -535,9 +535,10 @@ h3 {
 }
 
 .file-list {
-  max-width: 750px;
-  width: 95%;
-  margin: 0 auto;
+  width: 95vw;
+  /* max-width: 750px; */
+  height: 75vh;
+  margin: 0 auto
 }
 
 .dialog {
