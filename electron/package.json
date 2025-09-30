@@ -1,6 +1,6 @@
 {
-  "name": "fileshare",
-  "productName": "fileshare",
+  "name": "TakeItemYourself",
+  "productName": "自己拿，不用谢！",
   "description": "自己拿，想拿啥，拿啥，不用谢！",
   "version": "v1.0.4",
   "main": "./dist/main.js",
