@@ -103,14 +103,14 @@
 
           <el-card class="box-card">
             <template #header>
-              <el-dialog v-model="dialogFormVisible" title="自己拿一段文本">
+              <!-- <el-dialog v-model="dialogFormVisible" title="自己拿一段文本">
                 <el-input type="textarea" :rows="2" :autosize="{ minRows: 2, maxRows: 4 }"
                           placeholder="请输入内容" v-model="form.text">
                 </el-input>
                 <template #footer>
                   <el-button type="primary" @click="formSubmit">提交</el-button>
                 </template>
-              </el-dialog>
+              </el-dialog> -->
 
               <div class="card-header">
                 <el-row class="row-bg">

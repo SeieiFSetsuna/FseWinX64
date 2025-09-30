@@ -101,7 +101,7 @@
                     <div class="filename">{{ scope.row.name }}</div>
                   </el-tooltip>
                   <el-tooltip v-if="!!scope.row.username" effect="light"
-                              :content="`由【${scope.row.username}】拿给你的`"
+                              :content="`由【${scope.row.username}】赐给你的`"
                               placement="top">
                     <el-icon class="username" size="16">
                       <User/>
