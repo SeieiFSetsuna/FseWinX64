@@ -100,13 +100,22 @@
                               placement="top">
                     <div class="filename">{{ scope.row.name }}</div>
                   </el-tooltip>
-                  <el-tooltip v-if="!!scope.row.username" effect="light"
+                  <!-- <el-tooltip v-if="!!scope.row.username" effect="light"
                               :content="`由【${scope.row.username}】赐给你的`"
                               placement="top">
                     <el-icon class="username" size="16">
                       <User/>
                     </el-icon>
+                  </el-tooltip> -->
+                  
+                  <el-tooltip v-if="!!scope.row.username" effect="light"
+                              :content="`由【水星】赐给你的`"
+                              placement="top">
+                    <el-icon class="username" size="16">
+                      <User/>
+                    </el-icon>
                   </el-tooltip>
+
                 </div>
               </template>
             </el-table-column>
