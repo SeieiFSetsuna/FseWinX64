@@ -84,13 +84,23 @@
                   <!-- 非图片文件 -->
                   <file-icon v-if="scope.row.type === 'file' && !isPicture(scope.row.name)" :filename="scope.row.name"/>
                   <!-- 图片文件 -->
-                  <el-image
+                  <!-- <el-image
                     v-if="scope.row.type === 'file' && isPicture(scope.row.name)"
                     class="file-image"
                     fit="scale-down"
                     :src="scope.row.fullUrl"
                     :preview-src-list="[scope.row.fullUrl]">
+                  </el-image> -->
+                  
+                  <el-image
+                    v-if="scope.row.type === 'file' && isPicture(scope.row.name)"
+                    class="file-image"
+                    fit="scale-down"
+                    src="/img.png"
+                    :data-src="scope.row.fullUrl"
+                    :preview-src-list="[scope.row.fullUrl]">
                   </el-image>
+
                   <!-- 文件夹 -->
                   <file-icon v-if="scope.row.type === 'directory'" :is-directory="true"/>
                   <!-- 消息 -->
