@@ -14,11 +14,11 @@ module.exports = defineConfig({
     proxy: {
       '/api': {
         // target: 'http://127.0.0.1:5421'
-        target: 'http://192.168.10.168:80'
+        target: 'http://192.168.10.168'
       },
       '/sockjs-node/info': {
         // target: 'http://127.0.0.1:8001',
-        target: 'http://127.0.0.1:88',
+        target: 'http://192.168.10.168',
         ws: true,
         changeOrigin: true
       },
