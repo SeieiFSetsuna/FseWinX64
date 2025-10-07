@@ -96,7 +96,7 @@
                     v-if="scope.row.type === 'file' && isPicture(scope.row.name)"
                     class="file-image"
                     fit="scale-down"
-                    src="/img.png"
+                    src="../assets/logo.png"
                     :data-src="scope.row.fullUrl"
                     :preview-src-list="[scope.row.fullUrl]">
                   </el-image>
