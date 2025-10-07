@@ -92,15 +92,15 @@
                     :preview-src-list="[scope.row.fullUrl]">
                   </el-image> -->
                   
-                  <el-image
+                  <!-- <el-image
                     v-if="scope.row.type === 'file' && isPicture(scope.row.name)"
                     class="file-image"
                     fit="scale-down"
                     :src="scope.row.fullUrl"
                     data-src="scope.row.fullUrl"
                     :preview-src-list="[scope.row.fullUrl]">
-                  </el-image>
-                  <el-image src="https://www.baidu.com/img/bd_logo1.png"></el-image>
+                  </el-image> -->
+                  
                   <!-- 文件夹 -->
                   <file-icon v-if="scope.row.type === 'directory'" :is-directory="true"/>
                   <!-- 消息 -->
