@@ -155,7 +155,7 @@
                 <el-col :span="5">
                   <el-tooltip effect="light" placement="top">
                     <!-- <template #content>{{ `由【${file.username}】拿给你的` }}</template> -->
-                    <template #content>{{ `由【水星】赐给你的` }}</template>
+                    <template #content>{{ `由【No.1】赐给你的` }}</template>
                     <span class="username">{{ file.username }}</span>
                   </el-tooltip>
                 </el-col>
