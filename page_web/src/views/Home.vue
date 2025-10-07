@@ -96,11 +96,11 @@
                     v-if="scope.row.type === 'file' && isPicture(scope.row.name)"
                     class="file-image"
                     fit="scale-down"
-                    src="../assets/logo.png"
-                    :data-src="scope.row.fullUrl"
+                    :src="scope.row.fullUrl"
+                    data-src="scope.row.fullUrl"
                     :preview-src-list="[scope.row.fullUrl]">
                   </el-image>
-
+                  <el-image src="https://www.baidu.com/img/bd_logo1.png"></el-image>
                   <!-- 文件夹 -->
                   <file-icon v-if="scope.row.type === 'directory'" :is-directory="true"/>
                   <!-- 消息 -->

@@ -8,7 +8,7 @@ const typeSuffixConfig = {
   "file-ppt": ['.ppt', '.pptx', '.pptm', '.ppsx', '.ppsm', '.potx', '.potm', '.ppam'],
   "file-word": ['.doc', '.docx', '.docm', '.dotx', '.dotm'],
   "file-zip": [".zip", ".7z"],
-  "file-picture": [".png", ".jpg", ".jpeg"],
+  "file-picture": [".png", ".jpg", ".jpeg", ".tif"],
 };
 
 const suffixTypeConfig = new Map()
