@@ -18,7 +18,7 @@ module.exports = defineConfig({
       },
       '/sockjs-node/info': {
         // target: 'http://127.0.0.1:8001',
-        target: 'http://192.168.10.168',
+        target: 'http://127.0.0.1:81',
         ws: true,
         changeOrigin: true
       },
