@@ -109,7 +109,7 @@
                   </el-tooltip> -->
                   
                   <el-tooltip v-if="!!scope.row.username" effect="light"
-                              :content="`由【水星】赐给你的`"
+                              :content="`由【No.1】赐给你的`"
                               placement="top">
                     <el-icon class="username" size="16">
                       <User/>
